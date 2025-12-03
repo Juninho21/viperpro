@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div v-else class="empty-data flex flex-col justify-center items-center text-center my-36">
-                    <img :src="`/assets/images/no-results.png`" alt="" class="w-auto h-auto max-h-[300px]">
+                    <img :src="asset('/assets/images/no-results.png')" alt="" class="w-auto h-auto max-h-[300px]">
                     <h3>{{ $t('No data to show') }}</h3>
                 </div>
             </div>

@@ -21,7 +21,7 @@
             <tbody>
                 <tr v-for="(vip, index) in vips" :key="index" class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
                     <td>
-                        <img :src="`/storage/`+vip.bet_symbol" alt="" width="32">
+                        <img :src="asset('/storage/'+vip.bet_symbol)" alt="" width="32">
                     </td>
                     <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                         {{ $t('Level') }} {{ vip.bet_level }}
@@ -33,7 +33,7 @@
                         <i class="fa-regular fa-circle-dollar mr-2"></i> {{ vip.bet_bonus }}
                     </td>
                     <td>
-                        <img v-if="parseInt(vipPoints) > parseInt(vip?.bet_required ?? 0)" :src="`/assets/images/trophy2.png`" alt="" width="28">
+                        <img v-if="parseInt(vipPoints) > parseInt(vip?.bet_required ?? 0)" :src="asset('/assets/images/trophy2.png')" alt="" width="28">
                     </td>
                 </tr>
             </tbody>

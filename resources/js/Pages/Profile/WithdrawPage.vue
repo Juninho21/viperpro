@@ -16,7 +16,7 @@
                                 <button @click.prevent="$router.push('/profile/wallet')" type="button" class="flex justify-center items-center mr-3 pt-1">
                                     <div>{{ wallet.currency }}</div>
                                     <div class="mr-2 ml-2">
-                                        <img :src="`/assets/images/coin/`+wallet.currency+`.png`" alt="" width="32">
+                                        <img :src="asset('/assets/images/coin/'+wallet.currency+'.png')" alt="" width="32">
                                     </div>
                                     <div class="ml-2 text-sm">
                                         <i class="fa-solid fa-chevron-down"></i>
@@ -97,7 +97,7 @@
                                 <button @click.prevent="$router.push('/profile/wallet')" type="button" class="flex justify-center items-center mr-3 pt-1">
                                     <div>{{ wallet.currency }}</div>
                                     <div class="mr-2 ml-2">
-                                        <img :src="`/assets/images/coin/`+wallet.currency+`.png`" alt="" width="32">
+                                        <img :src="asset('/assets/images/coin/'+wallet.currency+'.png')" alt="" width="32">
                                     </div>
                                     <div class="ml-2 text-sm">
                                         <i class="fa-solid fa-chevron-down"></i>
@@ -109,7 +109,7 @@
                                 <p class="mb-2 text-gray-500">{{ $t('Withdraw with') }}</p>
                                 <div class="w-full flex items-center justify-between bg-white dark:bg-gray-900 rounded p-2">
                                     <div class="flex w-full items-center">
-                                        <img :src="`/assets/images/pix.png`" alt="" width="100">
+                                        <img :src="asset('/assets/images/pix.png')" alt="" width="100">
                                         <span class="ml-3">PIX</span>
                                     </div>
                                     <div class="w-8 ">

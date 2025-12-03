@@ -2,9 +2,9 @@
     <div class="congrats" :class="{'show':prize}">
 		<div class="congrats-backdrop"></div>
 		<div id="congrats-content">
-			<img class="img-bg rotate" :src="'/assets/images/spin/4fea7639.webp'" alt="">
+			<img class="img-bg rotate" :src="asset('/assets/images/spin/4fea7639.webp')" alt="">
 			<div class="bg-wrap">
-				<img class="img_glod" :src="'/assets/images/spin/7f96d3f0.webp'" alt="">
+				<img class="img_glod" :src="asset('/assets/images/spin/7f96d3f0.webp')" alt="">
 				<div class="cont">
 					<div class="tit ttu">{{ $t('Congratulations') }}!</div>
 					<div class="desc">{{ $t('You’ve got free money to bet on our games') }}!</div>

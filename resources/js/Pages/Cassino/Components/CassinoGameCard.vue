@@ -4,7 +4,7 @@
             <img :src="game.cover" alt="" class="w-full">
         </RouterLink>
         <RouterLink v-else :to="{ name: 'casinoPlayPage', params: { id: game.id, slug: game.game_code }}">
-            <img :src="`/storage/`+game.cover" alt="" class="w-full ">
+            <img :src="asset('/storage/'+game.cover)" alt="" class="w-full ">
         </RouterLink>
         <div class="flex justify-between w-full text-gray-700 dark:text-gray-400 px-3 py-2">
             <div class="flex flex-col justify-start items-start">
@@ -12,7 +12,7 @@
                 <small class="truncate text-[10px]">{{ game?.provider?.name }}</small>
             </div>
             <button type="button">
-                <img :src="`/assets/images/icons/info-game.svg`" alt="" width="29">
+                <img :src="asset('/assets/images/icons/info-game.svg')" alt="" width="29">
             </button>
         </div>
     </div>

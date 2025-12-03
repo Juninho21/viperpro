@@ -108,7 +108,7 @@
                                         <img :src="game.cover" alt="" class="w-full h-32 rounded-xl">
                                     </div>
                                     <div v-else>
-                                        <img :src="`/storage/`+game.cover" alt="" class="w-full h-32 rounded-xl">
+                                        <img :src="asset('/storage/'+game.cover)" alt="" class="w-full h-32 rounded-xl">
                                     </div>
                                 </div>
                                 <div class="p-4">
@@ -162,7 +162,7 @@
         </div>
         <div v-if="undermaintenance" class="flex flex-col items-center justify-center text-center py-24">
             <h1 class="text-2xl mb-4">JOGO EM MANUTENÇÃO</h1>
-            <img :src="`/assets/images/work-in-progress.gif`" alt="" width="400">
+            <img :src="asset('/assets/images/work-in-progress.gif')" alt="" width="400">
         </div>
     </GameLayout>
 </template>

@@ -44,7 +44,7 @@
             <!-- time a -->
             <div class="flex justify-between mt-3">
                 <div class="flex items-center">
-                    <img :src="`/storage/football/fixtures/`+state.generateSlug(event.team_home_name)+`.png`" alt="" width="32">
+                    <img :src="asset('/storage/football/fixtures/'+state.generateSlug(event.team_home_name)+'.png')" alt="" width="32">
                     <span class="ml-2">{{ event.team_home_name }}</span>
                 </div>
                 <div class="flex items-center">
@@ -57,7 +57,7 @@
             <!-- time b -->
             <div class="flex justify-between mt-3">
                 <div class="flex items-center">
-                    <img :src="`/storage/football/fixtures/`+state.generateSlug(event.team_away_name)+`.png`" alt="" width="32">
+                    <img :src="asset('/storage/football/fixtures/'+state.generateSlug(event.team_away_name)+'.png')" alt="" width="32">
                     <span class="ml-2">{{ event.team_away_name }}</span>
                 </div>
                 <div class="flex items-center">

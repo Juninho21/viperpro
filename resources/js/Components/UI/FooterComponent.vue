@@ -6,12 +6,12 @@
                     <div class="flex justify-between mb-3">
                         <div class="mr-5">
                             <a v-if="setting" href="/" class="flex ml-2 md:mr-24">
-                                <img :src="`/storage/`+setting.software_logo_black" alt="" class="h-10 mr-3 block dark:hidden " />
-                                <img :src="`/storage/`+setting.software_logo_white" alt=""  class="h-10 mr-3 hidden dark:block" />
+                                <img :src="asset('/storage/'+setting.software_logo_black)" alt="" class="h-10 mr-3 block dark:hidden " />
+                                <img :src="asset('/storage/'+setting.software_logo_white)" alt=""  class="h-10 mr-3 hidden dark:block" />
                             </a>
                         </div>
                         <div>
-                            <img :src="`/assets/images/+18.png`" width="42" alt="">
+                            <img :src="asset('/assets/images/+18.png')" width="42" alt="">
                         </div>
                     </div>
                     <div v-if="setting">

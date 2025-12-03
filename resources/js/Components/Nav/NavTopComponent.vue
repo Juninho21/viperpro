@@ -11,11 +11,11 @@
                     </button>
                     <a v-if="setting" href="/" class="flex ml-2 md:mr-24">
                         <div class="hidden sm:block">
-                            <img :src="`/storage/`+setting.software_logo_black" alt="" class="h-8 mr-3 block dark:hidden " />
-                            <img :src="`/storage/`+setting.software_logo_white" alt=""  class="h-8 mr-3 hidden dark:block" />
+                            <img :src="asset('/storage/'+setting.software_logo_black)" alt="" class="h-8 mr-3 block dark:hidden " />
+                            <img :src="asset('/storage/'+setting.software_logo_white)" alt=""  class="h-8 mr-3 hidden dark:block" />
                         </div>
                         <div class="block sm:hidden">
-                            <img :src="`/storage/`+setting.software_favicon" class="h-10 mr-3" alt="" />
+                            <img :src="asset('/storage/'+setting.software_favicon)" class="h-10 mr-3" alt="" />
                         </div>
                     </a>
                 </div>
@@ -178,7 +178,7 @@
         <div class="relative w-full max-w-3xl max-h-full bg-base rounded-lg shadow-lg">
             <div class="flex md:justify-between">
                 <div class="w-full p-0 hidden md:block">
-                    <img :src="`/assets/images/br_bg.png`" alt="" class="w-full h-full">
+                    <img :src="asset('/assets/images/br_bg.png')" alt="" class="w-full h-full">
                 </div>
                 <div class="w-full relative p-5">
                     <div v-if="isLoadingLogin" class="absolute top-0 left-0 right-0 bottom-0 bg-white/70 dark:bg-gray-800/70 z-[999]">
@@ -256,7 +256,7 @@
 
             <div class="flex md:justify-between h-full">
                 <div class="w-full p-0 hidden md:block dark:bg-[#1A1C1F]">
-                    <img :src="`/assets/images/br_bg.png`" alt="" class="w-full h-full">
+                    <img :src="asset('/assets/images/br_bg.png')" alt="" class="w-full h-full">
                 </div>
                 <div class="w-full relative p-5 m-auto">
                     <form @submit.prevent="registerSubmit" method="post" action="" class="">

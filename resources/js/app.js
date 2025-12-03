@@ -14,6 +14,7 @@ import "vue-toastification/dist/index.css";
 import '@/index.css';
 
 import App from './App.vue';
+import { assetMixin } from "@/Mixins/assetMixin.js";
 import {useAuthStore} from "@/Stores/Auth.js";
 
 
@@ -145,6 +146,8 @@ app.use(i18nVue, {
         return await langs[`../../lang/${lang}.json`]();
     }
 });
+
+app.mixin(assetMixin);
 
 (async () => {
     const setting = useSettingStore();

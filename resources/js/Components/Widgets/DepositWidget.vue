@@ -6,7 +6,7 @@
                 <ul>
                     <li v-if="setting.suitpay_is_enable" @click="setPaymentMethod('pix')" class=" bg-white dark:bg-gray-900 cursor-pointer flex justify-between hover:bg-green-700/20 px-4 py-3 mb-3">
                         <div>
-                            <img :src="`/assets/images/pix.png`" alt="" width="100">
+                            <img :src="asset('/assets/images/pix.png')" alt="" width="100">
                         </div>
                         <div>
 
@@ -17,7 +17,7 @@
                     </li>
                     <li v-if="setting.stripe_is_enable" @click="setPaymentMethod('stripe')" class="bg-white dark:bg-gray-900 cursor-pointer flex justify-between hover:bg-green-700/20 px-4 py-3 mb-2">
                         <div>
-                            <img :src="`/assets/images/stripe.png`" alt="" width="80">
+                            <img :src="asset('/assets/images/stripe.png')" alt="" width="80">
                         </div>
                         <div>
 
@@ -99,7 +99,7 @@
                             <button type="button" class="flex justify-center items-center mr-3 pt-1">
                                 <div>{{ wallet.currency }}</div>
                                 <div class="mr-2 ml-2">
-                                    <img :src="`/assets/images/coin/BRL.png`" alt="" width="32">
+                                    <img :src="asset('/assets/images/coin/BRL.png')" alt="" width="32">
                                 </div>
                                 <div class="ml-2 text-sm">
                                     <i class="fa-solid fa-chevron-down"></i>
@@ -111,7 +111,7 @@
                             <p class="mb-2 text-gray-500">{{ $t('Payment methods') }}</p>
                             <div class="w-full flex items-center justify-between bg-white dark:bg-gray-900 rounded p-2">
                                 <div class="flex w-full items-center">
-                                    <img :src="`/assets/images/pix.png`" alt="" width="100">
+                                    <img :src="asset('/assets/images/pix.png')" alt="" width="100">
                                     <span class="ml-3">PIX</span>
                                 </div>
                                 <div class="w-8 ">
@@ -147,17 +147,17 @@
                             <div @click.prevent="setAmount(parseFloat(setting.min_deposit))" class="item" :class="{'active' : selectedAmount === parseFloat(setting.min_deposit)}">
                                 <button type="button">{{ state.currencyFormat(parseFloat(setting.min_deposit), wallet.currency) }}</button>
                                 <div v-if="selectedAmount === parseFloat(setting.min_deposit)" class="ratio">+{{ setting.initial_bonus }}%</div>
-                                <img v-if="selectedAmount === parseFloat(setting.min_deposit)" class="img-check" :src="`/assets/images/check.webp`" alt="">
+                                <img v-if="selectedAmount === parseFloat(setting.min_deposit)" class="img-check" :src="asset('/assets/images/check.webp')" alt="">
                             </div>
                             <div @click.prevent="setAmount(50.00)" class="item" :class="{'active' : selectedAmount === 50.00}">
                                 <button type="button">{{ wallet.symbol }} 50,00</button>
                                 <div v-if="selectedAmount === 50.00" class="ratio">+{{ setting.initial_bonus }}%</div>
-                                <img v-if="selectedAmount === 50.00" class="img-check" :src="`/assets/images/check.webp`" alt="">
+                                <img v-if="selectedAmount === 50.00" class="img-check" :src="asset('/assets/images/check.webp')" alt="">
                             </div>
                             <div @click.prevent="setAmount(200.00)" class="item" :class="{'active' : selectedAmount === 200.00}">
                                 <button type="button">{{ wallet.symbol }} 200,00</button>
                                 <div v-if="selectedAmount === 200.00" class="ratio">+{{ setting.initial_bonus }}%</div>
-                                <img v-if="selectedAmount === 200.00" class="img-check" :src="`/assets/images/check.webp`" alt="">
+                                <img v-if="selectedAmount === 200.00" class="img-check" :src="asset('/assets/images/check.webp')" alt="">
                             </div>
                         </div>
 

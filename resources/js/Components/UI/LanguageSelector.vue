@@ -23,7 +23,7 @@
                     <div class="relative">
                         <input type="radio" v-model="language" value="en" name="language_selection" class="peer absolute start-0 top-0 z-20 h-full w-full cursor-pointer opacity-0" />
                         <div class="border-gray-200 peer-checked:border-primary-500 dark:border-gray-600 flex h-14 w-14 items-center justify-center rounded-full border-2 shadow-lg transition-all duration-300">
-                            <img class="h-10 w-10 rounded-full" :src="`/assets/images/lang/united-states-of-america.svg`" alt="flag icon" />
+                            <img class="h-10 w-10 rounded-full" :src="asset('/assets/images/lang/united-states-of-america.svg')" alt="flag icon" />
                         </div>
                         <div class="bg-primary-500 dark:border-gray-800 absolute -end-1 -top-1 hidden h-7 w-7 items-center justify-center rounded-full border-4 border-white text-white peer-checked:flex">
                             <svg data-v-26e5b7b0="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon h-3 w-3" width="1em" height="1em" viewBox="0 0 24 24">
@@ -36,7 +36,7 @@
                     <div class="relative">
                         <input type="radio" v-model="language" value="pt_BR" name="language_selection" class="peer absolute start-0 top-0 z-20 h-full w-full cursor-pointer opacity-0" />
                         <div class="border-gray-200 peer-checked:border-primary-500 dark:border-gray-600 flex h-14 w-14 items-center justify-center rounded-full border-2 shadow-lg transition-all duration-300">
-                            <img class="h-10 w-10 rounded-full" :src="`/assets/images/lang/brasil.svg`" alt="flag icon" />
+                            <img class="h-10 w-10 rounded-full" :src="asset('/assets/images/lang/brasil.svg')" alt="flag icon" />
                         </div>
                         <div class="bg-primary-500 dark:border-gray-800 absolute -end-1 -top-1 hidden h-7 w-7 items-center justify-center rounded-full border-4 border-white text-white peer-checked:flex">
                             <svg data="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon h-3 w-3" width="1em" height="1em" viewBox="0 0 24 24">
@@ -49,7 +49,7 @@
 <!--                    <div class="relative">-->
 <!--                        <input type="radio" v-model="language" value="es" name="language_selection" class="peer absolute start-0 top-0 z-20 h-full w-full cursor-pointer opacity-0" />-->
 <!--                        <div class="border-gray-200 peer-checked:border-primary-500 dark:border-gray-600 flex h-14 w-14 items-center justify-center rounded-full border-2 shadow-lg transition-all duration-300">-->
-<!--                            <img class="h-10 w-10 rounded-full" :src="`/assets/images/lang/spain.svg`" alt="flag icon" />-->
+<!--                            <img class="h-10 w-10 rounded-full" :src="asset('/assets/images/lang/spain.svg')" alt="flag icon" />-->
 <!--                        </div>-->
 <!--                        <div class="bg-primary-500 dark:border-gray-800 absolute -end-1 -top-1 hidden h-7 w-7 items-center justify-center rounded-full border-4 border-white text-white peer-checked:flex">-->
 <!--                            <svg data-v-26e5b7b0="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="icon h-3 w-3" width="1em" height="1em" viewBox="0 0 24 24">-->
@@ -60,8 +60,8 @@
 <!--                </div>-->
             </div>
             <div>
-                <img :src="`/assets/images/lang/translation.svg`" class="mx-auto w-full max-w-[280px] dark:hidden" alt="illustration" />
-                <img :src="`/assets/images/lang/translation-dark.svg`" class="mx-auto hidden w-full max-w-[280px] dark:block" alt="illustration" />
+                <img :src="asset('/assets/images/lang/translation.svg')" class="mx-auto w-full max-w-[280px] dark:hidden" alt="illustration" />
+                <img :src="asset('/assets/images/lang/translation-dark.svg')" class="mx-auto hidden w-full max-w-[280px] dark:block" alt="illustration" />
             </div>
         </div>
 

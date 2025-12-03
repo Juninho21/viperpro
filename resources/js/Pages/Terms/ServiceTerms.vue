@@ -3,7 +3,7 @@
         <div class="w-full p-4">
             <div class="grid grid-cols-1 md:grid-cols-2">
                 <div class="hidden md:block">
-                    <img :src="`/assets/images/terms-conditions.png`" alt="" class="w-full">
+                    <img :src="asset('/assets/images/terms-conditions.png')" alt="" class="w-full">
                 </div>
                 <div class="">
                     <h4 class="text-2xl">Introdução</h4>

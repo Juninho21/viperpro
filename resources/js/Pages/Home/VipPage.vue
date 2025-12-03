@@ -23,7 +23,7 @@
                     <div class="pt-6">
                         <div class="flex justify-between items-center self-center w-full mt-3 p-4">
                             <div>
-                                <img :src="`/assets/images/00.png`" alt="" class="h-16">
+                                <img :src="asset('/assets/images/00.png')" alt="" class="h-16">
                             </div>
                             <div class="flex gap-2">
                                 <p>Para o próximo nível</p>

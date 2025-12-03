@@ -2,7 +2,7 @@
     <div id="side-box" class="w-full-mobile md:w-[350px]">
         <div id="side-box-header" class="p-4 flex justify-between" @click.prevent="toggleSideBox">
             <div class="flex items-center">
-                <img :src="`/assets/images/icons/document.svg`" alt="" width="38" class="mr-2">
+                <img :src="asset('/assets/images/icons/document.svg')" alt="" width="38" class="mr-2">
                 <div class="text-white leading-6">
                     {{ $t('Betting Bulletin') }} <span v-if="sportStore.bets.length > 0" class="font-bold">({{ sportStore.bets.length }})</span>
                 </div>

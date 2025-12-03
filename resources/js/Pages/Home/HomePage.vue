@@ -16,7 +16,7 @@
                             <Slide v-for="(banner, index) in banners" :key="index">
                                 <div class="carousel__item rounded w-full">
                                     <a :href="banner.link" class="w-full h-full bg-blue-800 rounded">
-                                        <img :src="`/storage/`+banner.image" alt="" class="h-full w-full rounded">
+                                        <img :src="asset('/storage/'+banner.image)" alt="" class="h-full w-full rounded">
                                     </a>
                                 </div>
                             </Slide>
@@ -40,7 +40,7 @@
                             <Slide v-for="(banner, index) in bannersHome" :key="index">
                                 <div class="carousel__item  min-h-[60px] md:min-h-[150px] rounded w-full mr-4">
                                     <a :href="banner.link" class="w-full h-full rounded">
-                                        <img :src="`/storage/`+banner.image" alt="" class="h-full w-full rounded">
+                                        <img :src="asset('/storage/'+banner.image)" alt="" class="h-full w-full rounded">
                                     </a>
                                 </div>
                             </Slide>
@@ -80,7 +80,7 @@
                         <div class="flex flex-row justify-between items-center w-full" style="min-width: 100%; white-space: nowrap;">
                             <RouterLink :to="{ name: 'casinosAll', params: { provider: 'all', category: category.slug }}" v-for="(category, index) in categories" class="flex flex-col justify-center items-center min-w-[80px] text-center">
                                 <div class="category-img">
-                                    <img :src="`/storage/`+category.image" alt="" width="35" class="">
+                                    <img :src="asset('/storage/'+category.image)" alt="" width="35" class="">
                                 </div>
                                 <p class="mt-3">{{ $t(category.name) }}</p>
                             </RouterLink>
@@ -114,7 +114,7 @@
                     <div class="grid py-4">
                         <h1 class="text-lg font-bold mb-3 text-center">{{ $t('PREFERRED PAYMENT METHOD') }}</h1>
                         <div class="payment-list flex items-center">
-                            <img :src="`/assets/images/icons/pix.svg`" alt="" width="128">
+                            <img :src="asset('/assets/images/icons/pix.svg')" alt="" width="128">
 
                             <div class="divider"></div>
 

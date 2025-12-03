@@ -26,11 +26,11 @@
                     <RouterLink :to="{ name: 'sportSingle', params: { date: state.dateFormatServer(event.date), id: event.id } }">
                         <div class="flex flex-col gap-2 text-white hover:text-gray-300 transition duration-700">
                             <h2 class="flex">
-                                <img :src="`/storage/football/fixtures/`+state.generateSlug(event.team_home_name)+`.png`" class="mr-2" width="20" alt="">
+                                <img :src="asset('/storage/football/fixtures/'+state.generateSlug(event.team_home_name)+'.png')" class="mr-2" width="20" alt="">
                                 {{ event.team_home_name }}
                             </h2>
                             <h2 class="flex">
-                                <img :src="`/storage/football/fixtures/`+state.generateSlug(event.team_away_name)+`.png`" class="mr-2" width="20" alt="">
+                                <img :src="asset('/storage/football/fixtures/'+state.generateSlug(event.team_away_name)+'.png')" class="mr-2" width="20" alt="">
                                 {{ event.team_away_name }}
                             </h2>
                         </div>

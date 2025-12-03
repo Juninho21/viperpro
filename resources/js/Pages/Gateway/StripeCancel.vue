@@ -3,7 +3,7 @@
         <div class="my-auto mt-36">
             <div class="px-4 py-5">
                 <div class="min-h-[calc(100vh-565px)] text-center flex flex-col items-center justify-center">
-                    <img :src="`/assets/images/error.png`" alt="" class="w-36">
+                    <img :src="asset('/assets/images/error.png')" alt="" class="w-36">
                     <div class="mt-5 mb-5 text-center">
                         <h1 class="text-2xl">{{ $t('Transaction Canceled') }}</h1>
                     </div>

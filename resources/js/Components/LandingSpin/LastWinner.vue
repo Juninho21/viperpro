@@ -1,6 +1,6 @@
 <template>
     <div class="data-cont">
-	    <img class="avatar " :src="'/assets/images/spin/avatar.png'">
+	    <img class="avatar " :src="asset('/assets/images/spin/avatar.png')">
 		<div class="cont">
 			<div class="name">{{winner.name}}</div>
 			<div class="win">Win: <span class="amount">{{ winner.prize }}</span> <span class="currency text-uppercase">{{ winner.currency }}</span> </div>

@@ -13,7 +13,7 @@
                             <div class="btn-menu-mission-text">
                                 <h1>{{ $t('Mission') }}</h1>
                             </div>
-                            <img :src="`/assets/images/quests.png`" alt="" width="38">
+                            <img :src="asset('/assets/images/quests.png')" alt="" width="38">
                         </button>
                         <button v-if="!isAuthenticated && setting && setting.disable_spin" @click.prevent="$router.push('/landing/spin')" class="btn-menu-rotate border border-red-500">
                             <div class="btn-menu-rotate-text">
@@ -29,7 +29,7 @@
                             </div>
                             <div class="spin-anim">
                                 <img class="img-spinbg" src="data:image/png;base64,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" alt="">
-                                <img :src="`/assets/images/refer.webp`" alt="" width="26">
+                                <img :src="asset('/assets/images/refer.webp')" alt="" width="26">
                             </div>
                         </button>
                     </div>
@@ -39,7 +39,7 @@
                             type="button"
                             class="promo-register transition duration-700 text-sm ease-in-out font-bold py-2 rounded-lg px-3 w-full">
                         <div class="flex justify-center text-center self-center items-center">
-                            <img :src="`/assets/images/refer.webp`" alt="" width="38" class="mr-3">
+                            <img :src="asset('/assets/images/refer.webp')" alt="" width="38" class="mr-3">
                             {{ $t('Double your balance') }}
                         </div>
                     </button>
@@ -48,13 +48,13 @@
             <div class="grid grid-cols-2 gap-4">
                 <div>
                     <RouterLink :to="{ name: 'home' }" active-class="category-active" class="site-menu-item flex flex-col items-center justify-center text-center p-3  rounded-xl">
-                        <img :src="`/assets/images/icons/home.svg`" alt="" width="35">
+                        <img :src="asset('/assets/images/icons/home.svg')" alt="" width="35">
                         <span class="text-[12px] mt-2">{{ $t('Home') }}</span>
                     </RouterLink>
                 </div>
                 <div>
                     <RouterLink :to="{ name: 'casinos' }" active-class="category-active" class="site-menu-item flex flex-col items-center justify-center text-center p-3 rounded-xl">
-                        <img :src="`/assets/images/icons/fortune.svg`" alt="" width="35">
+                        <img :src="asset('/assets/images/icons/fortune.svg')" alt="" width="35">
                         <span class="text-[12px] mt-2">{{ $t('Casino') }}</span>
                     </RouterLink>
                 </div>
@@ -69,7 +69,7 @@
 
                 <div v-else class="grid grid-cols-2 gap-4 mt-4 mb-4">
                     <RouterLink v-for="(category, index) in categories" :key="index" :to="{ name: 'casinosAll', params: { provider: 'all', category: category.slug }}" active-class="category-active" class="h-20 site-menu-item flex flex-col items-center justify-center text-center p-3 rounded-xl">
-                        <img :src="`/storage/`+category.image" alt="" width="35">
+                        <img :src="asset('/storage/'+category.image)" alt="" width="35">
                         <span class="text-[12px] mt-2">{{ $t(category.name) }}</span>
                     </RouterLink>
                 </div>
@@ -79,13 +79,13 @@
 
                 <div>
                     <RouterLink :to="{ name: 'profileWallet' }" active-class="category-active" class="site-menu-item flex flex-col items-center justify-center text-center p-3 rounded-xl">
-                        <img :src="`/assets/images/icons/wallet-money.svg`" alt="" width="35">
+                        <img :src="asset('/assets/images/icons/wallet-money.svg')" alt="" width="35">
                         <span class="text-[12px] mt-2">{{ $t('Wallet') }}</span>
                     </RouterLink>
                 </div>
                 <div>
                     <RouterLink :to="{ name: 'favoritePage' }" active-class="category-active" class="site-menu-item flex flex-col items-center justify-center text-center p-3 rounded-xl">
-                        <img :src="`/assets/images/icons/folder-favourite.svg`" alt="" width="35">
+                        <img :src="asset('/assets/images/icons/folder-favourite.svg')" alt="" width="35">
                         <span class="text-[12px] mt-2">{{ $t('Favorites') }}</span>
                     </RouterLink>
                 </div>
@@ -94,37 +94,37 @@
             <div class="grid grid-cols-2 gap-4 mt-4">
                 <div>
                     <RouterLink :to="{ name: 'eventsPage' }" active-class="category-action" class="relative">
-                        <img :src="`/assets/images/eventos.png`" alt="" class="w-full">
+                        <img :src="asset('/assets/images/eventos.png')" alt="" class="w-full">
                         <h1 class="button-title-menu">Eventos</h1>
                     </RouterLink>
                 </div>
                 <div>
                     <RouterLink :to="{ name: 'recentsPage' }" active-class="category-action" class="relative">
-                        <img :src="`/assets/images/juros.png`" alt="" class="w-full">
+                        <img :src="asset('/assets/images/juros.png')" alt="" class="w-full">
                         <h1 class="button-title-menu">{{ $t('Recents') }}</h1>
                     </RouterLink>
                 </div>
                 <div>
                     <RouterLink :to="{ name: 'awardsPage' }" active-class="category-action" class="relative">
-                        <img :src="`/assets/images/pendente.png`" alt="" class="w-full">
+                        <img :src="asset('/assets/images/pendente.png')" alt="" class="w-full">
                         <h1 class="button-title-menu">{{ $t('Awards') }}</h1>
                     </RouterLink>
                 </div>
                 <div>
                     <RouterLink :to="{ name: 'recordPage' }" active-class="category-action" class="relative">
-                        <img :src="`/assets/images/rebate.png`" alt="" class="w-full">
+                        <img :src="asset('/assets/images/rebate.png')" alt="" class="w-full">
                         <h1 class="button-title-menu">{{ $t('Records') }}</h1>
                     </RouterLink>
                 </div>
                 <div>
                     <RouterLink :to="{ name: 'vipPage' }" active-class="category-action" class="relative">
-                        <img :src="`/assets/images/vip.png`" alt="" class="w-full">
+                        <img :src="asset('/assets/images/vip.png')" alt="" class="w-full">
                         <h1 class="button-title-menu">{{ $t('Vip') }}</h1>
                     </RouterLink>
                 </div>
                 <div>
                     <RouterLink :to="{ name: 'bonusPage' }" active-class="category-action" class="relative">
-                        <img :src="`/assets/images/coletas.png`" alt="" class="w-full">
+                        <img :src="asset('/assets/images/coletas.png')" alt="" class="w-full">
                         <h1 class="button-title-menu">{{ $t('Bonus') }}</h1>
                     </RouterLink>
                 </div>

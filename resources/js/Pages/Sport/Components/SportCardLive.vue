@@ -42,7 +42,7 @@
         <RouterLink :to="{ name: 'sportSingle', params: { date: state.dateFormatServer(event.date), id: event.id }}" class="flex justify-between">
             <div>
                 <div class="flex flex-col items-center">
-                    <img :src="`/storage/football/fixtures/`+state.generateSlug(event.team_home_name)+`.png`" alt="" width="32">
+                    <img :src="asset('/storage/football/fixtures/'+state.generateSlug(event.team_home_name)+'.png')" alt="" width="32">
                     <span class="ml-2 text-[12px]">{{ event.team_home_name }}</span>
                 </div>
             </div>
@@ -60,7 +60,7 @@
             </div>
             <div>
                 <div class="flex flex-col items-center">
-                    <img :src="`/storage/football/fixtures/`+state.generateSlug(event.team_away_name)+`.png`" alt="" width="32">
+                    <img :src="asset('/storage/football/fixtures/'+state.generateSlug(event.team_away_name)+'.png')" alt="" width="32">
                     <span class="ml-2 text-[12px]">{{ event.team_away_name }}</span>
                 </div>
             </div>

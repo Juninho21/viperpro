@@ -34,7 +34,7 @@
 
                     <div class="flex justify-between">
                         <div>
-                            <img :src="`/storage/football/fixtures/`+state.generateSlug(event.team_home_name)+`.png`" alt="" width="56" class="mb-3">
+                            <img :src="asset('/storage/football/fixtures/'+state.generateSlug(event.team_home_name)+'.png')" alt="" width="56" class="mb-3">
                             <span class="font-bold">{{ event.team_home_name }}</span>
                         </div>
                         <div>
@@ -67,7 +67,7 @@
                             </div>
                         </div>
                         <div class="flex flex-col items-end">
-                            <img :src="`/storage/football/fixtures/`+state.generateSlug(event.team_away_name)+`.png`" alt="" width="56" class="mb-3">
+                            <img :src="asset('/storage/football/fixtures/'+state.generateSlug(event.team_away_name)+'.png')" alt="" width="56" class="mb-3">
                             <span class="font-bold">{{ event.team_away_name }}</span>
                         </div>
                     </div>

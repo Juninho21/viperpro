@@ -83,7 +83,7 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-4">
                         <div class="flex items-center bg-white dark:bg-gray-800 p-4 shadow-lg w-full mb-3 dark:border-gray-700">
                             <div class="w-20 mr-3">
-                                <img :src="`/assets/images/trophy.png`" alt="">
+                                <img :src="asset('/assets/images/trophy.png')" alt="">
                             </div>
                             <div class="w-full">
                                 <h1 class="text-base">{{ $t('TOTAL REWARD RECEIVED') }}:</h1>
@@ -95,7 +95,7 @@
                         </div>
                         <div class="flex items-center bg-white dark:bg-gray-800 px-4 py-2 shadow-lg w-full mb-3 dark:border-gray-700">
                             <div class="w-20 mr-3">
-                                <img :src="`/assets/images/usehead.b760e9be.png`" alt="">
+                                <img :src="asset('/assets/images/usehead.b760e9be.png')" alt="">
                             </div>
                             <div>
                                 <h1 class="text-base">{{ $t('TOTAL REFERRED FRIENDS') }}:</h1>
@@ -107,7 +107,7 @@
                         <div class="p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-full mb-3">
                             <div class="header flex justify-between">
                                 <div class="flex items-center">
-                                    <img :src="`/assets/images/network.a415d3eb.png`" alt="" width="28">
+                                    <img :src="asset('/assets/images/network.a415d3eb.png')" alt="" width="28">
                                     <h2 class="ml-3">{{ $t('REFERRAL REVSHARE') }}</h2>
                                 </div>
                                 <button @click.prevent="toggleCommissionRewards" type="button" class="flex items-center text-green-500 font-bold">
@@ -123,7 +123,7 @@
                         <div class="p-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 w-full mb-3">
                             <div class="header flex justify-between">
                                 <div class="flex items-center">
-                                    <img :src="`/assets/images/discount.bf090f3a.png`" alt="" width="28">
+                                    <img :src="asset('/assets/images/discount.bf090f3a.png')" alt="" width="28">
                                     <h2 class="ml-3">{{ $t('COMMISSION CPA') }}</h2>
                                 </div>
                                 <button @click.prevent="toggleReferenceRewards" type="button" class="flex items-center text-green-500 font-bold">
@@ -140,7 +140,7 @@
 
                     <div class="flex shadow dark:bg-gray-800 dark:border-gray-700 w-full rounded-lg">
                         <div class="p-4">
-                            <img :src="`/assets/images/indique.png`" alt="" class="mr-3">
+                            <img :src="asset('/assets/images/indique.png')" alt="" class="mr-3">
                         </div>
                         <div class="flex flex-col justify-center  p-4">
                             <h1 class="text-2xl font-bold mb-3">Solicite o acesso</h1>

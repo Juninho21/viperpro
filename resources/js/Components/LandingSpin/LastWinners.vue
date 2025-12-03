@@ -11,7 +11,7 @@
                     </button>
                 </div>
                 <div class="header">
-                    <img :src="'/assets/images/spin/ccccc.png'" class="crown" alt="">
+                    <img :src="asset('/assets/images/spin/ccccc.png')" class="crown" alt="">
                     <div class="spin-bonus">
                         <img class="pre-img"
                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAA8CAMAAADfciMYAAAAOVBMVEUAAABhoxNYnA5YnA5anxFXnA1XnA1XnA1YnA1YnA5anhBanQ9XnA1XnA1XnA1YnQ5YnQ5XnA5Xmw18sITgAAAAEnRSTlMAD1uOHvDN4qh8LTzYwLRNbJuWdev/AAAB2klEQVQ4y32VSaLjIAxEzTzYYKj7H7YFH0KwlX4bL6QIVSGRg0OoS/GBK/SvvgDPZoQR8AD4GpYihUqBuNkMQxFHh9AnHSwORGw1vOAz/CivKc5zgjh/yKyxfRVghJAhyGcVOeV55GJAGPk0gqhUy+BDeWdQjxWwdmRcz1OIdLZGRUXD671TdOyf61oGucWHiI65VU5VcnLtOHx8IpOS8Y1jDZ0iXjcbVfirea2EvZHSRJxdj9HKAU5pxk/61Q3k1tCK7G7hJMHhYNHDLdsuPhalysutNMwCYpf8nrCIifnlxo0HhTdr4VlDw2iB26XVjaNSfWB/ir6O/yI2CSwAWqJMBu7eGwi1hrOvpD6ifV8+RRopekDG4dnerR9+VqDOIeQdNdQqN0BExgP/Xmts1G7PuaV4LHILnQlG7IaGnHxx1IGYo4ubfwrtmsvCGW+6DP1nSvjxnjpxhCmZQVAnam6W7nMTmc24h6YmwLaak1Mlm1T6jLPuJddhOj/GXU6z82rgm6vbhoadF7wniPUuuakibWt1xc8upvWvNC9Wy/HgXs/d0MXn3B+bu5Wp42mL/Ga0oOkZlXX2LmGuqRVMXGHhuYTEvwH80PJNJu7J5NtwJxeevqSsvqb0H0eLMkgpefdsAAAAAElFTkSuQmCC"

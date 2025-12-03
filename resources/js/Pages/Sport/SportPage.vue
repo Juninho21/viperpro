@@ -31,7 +31,7 @@
                 <section class="mx-4 mt-5">
                     <div class="section-title">
                         <h1 class="flex text-3xl">
-                            <img :src="`/assets/images/icons/trophy.svg`" alt="" width="32" class="mr-3">
+                            <img :src="asset('/assets/images/icons/trophy.svg')" alt="" width="32" class="mr-3">
                             <span class="ml-2">{{ $t('Main Games') }}</span>
                         </h1>
                     </div>
@@ -40,7 +40,7 @@
                         <div id="scrollable-move" class="category-options flex mt-4 w-full scrollable-content">
 
                             <button @click.prevent="setCategory('all')" v-if="!isLoadingCategories" class="league-list hover:dark:bg-gray-600/10  hover:dark:text-gray-500 justify-center transition duration-700 px-4 py-1 flex bg-gray-100 dark:bg-gray-700 rounded-full items-center mr-3">
-                                <img :src="`/assets/images/icons/futebol.svg`" alt="" width="20">
+                                <img :src="asset('/assets/images/icons/futebol.svg')" alt="" width="20">
                                 <span class="ml-2">{{ $t('All') }}</span>
                             </button>
 
@@ -56,7 +56,7 @@
                             <button v-else v-for="(league, index) in leagues" :key="index"
                                     @click.prevent="setCategory(league.name)"
                                     class="league-list hover:dark:bg-gray-600/10  hover:dark:text-gray-500 justify-center transition duration-700 px-4 py-1 flex bg-gray-100 dark:bg-gray-700 rounded-full items-center mr-3">
-                                <img :src="`/storage/football/leagues/`+state.generateSlug(league.country + '-' + league.name)+`.png`" alt="" width="20">
+                                <img :src="asset('/storage/football/leagues/'+state.generateSlug(league.country + '-' + league.name)+'.png')" alt="" width="20">
                                 <span class="ml-2">{{ $t(league.name) }}</span>
                             </button>
                         </div>
@@ -112,7 +112,7 @@
                 </section>
             </div>
             <div v-else class="flex flex-col w-full justify-center items-center self-center py-24 mx-auto">
-                <img :src="`/assets/images/web-maintenance-services.png`" alt="" class="max-w-[550px]">
+                <img :src="asset('/assets/images/web-maintenance-services.png')" alt="" class="max-w-[550px]">
             </div>
         </div>
 
