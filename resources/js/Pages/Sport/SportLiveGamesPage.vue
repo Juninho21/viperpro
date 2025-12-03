@@ -54,7 +54,7 @@ export default {
     },
     setup(props) {
         const firebaseConfig = {
-            apiKey: "AIzaSyAgFeM38rpp2FtyRcniuTSwInt5i_LkrEw",
+            apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
             authDomain: "footballapi-77676.firebaseapp.com",
             databaseURL: "https://footballapi-77676-default-rtdb.firebaseio.com",
             projectId: "footballapi-77676",

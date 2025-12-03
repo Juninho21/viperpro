@@ -34,7 +34,7 @@ export default {
     },
     setup(props) {
         const firebaseConfig = {
-            apiKey: "AIzaSyDuZxERSC12JRHv_CxfamTi8yhzXDqQ-zQ",
+            apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
             authDomain: "magnata-f9cda.firebaseapp.com",
             databaseURL: "https://magnata-f9cda-default-rtdb.firebaseio.com",
             projectId: "magnata-f9cda",
